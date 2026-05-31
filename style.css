@@ -1,0 +1,119 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: #1e1e1e;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 255, 204, 0.2);
+    border: 1px solid #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #00ffcc;
+    margin: 0;
+}
+
+.control-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #aaa;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    background-color: #2d2d2d;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box; /* ফোন এর জন্য জরুরি */
+}
+
+input:focus, select:focus {
+    border-color: #00ffcc;
+}
+
+button {
+    background: linear-gradient(45deg, #00ffcc, #00b894);
+    color: #121212;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.2s;
+    width: 100%; /* ফোনে ভালো দেখায় */
+}
+
+button:hover {
+    transform: scale(1.02);
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #333;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#progressBar {
+    height: 100%;
+    background-color: #00ffcc;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+#statusText {
+    text-align: center;
+    margin-top: 10px;
+    color: #00ffcc;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* ফোনের জন্য ছোট গ্রিড */
+    gap: 10px;
+    margin-top: 30px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.video-card {
+    background: #2d2d2d;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+video, iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
